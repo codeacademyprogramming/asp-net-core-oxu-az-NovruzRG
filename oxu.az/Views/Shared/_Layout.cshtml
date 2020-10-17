@@ -1,0 +1,99 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>@ViewData["Title"] - oxu.az</title>
+    <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="~/lib/fontawesome/css/all.min.css" />
+    <link rel="stylesheet" href="~/css/site.css" />
+    @RenderSection("StyleCSS", required: false)
+    <title>Oxu az</title>
+</head>
+<body>
+    <header class="header">
+        <div class="header-primary-holder"></div>
+        <div class="header-primary">
+            <div class="l-center">
+                <div class="header-side d-flex justify-content-between">
+                    <div>
+                        <a class="nav-toggle"><i class="fas fa-bars"></i></a>
+                        <a class="logo " href="/">oxu.az</a>
+                    </div>
+                    <div>
+                        <a class="oku-link" href="#">Haqqımızda</a>
+                        <a class="oku-link" href="#">Reklam</a>
+                        <div class="social">
+                            <a class="social-i " target="_blank" href="#"><i class="fab fa-facebook-f"></i></a>
+                            <a class="social-i " target="_blank" href="#"><i class="fab fa-twitter"></i></a>
+                            <a class="social-i " target="_blank" href="#"><i class="fab fa-telegram-plane"></i></a>
+                            <a class="social-i " target="_blank" href="#"><i class="fab fa-android"></i></a>
+                            <a class="social-i " target="_blank" href="#"><i class="fab fa-apple"></i></a>
+                        </div>
+                        <div class="search-container">
+                            <input class="search-input" name="query" placeholder="Axtarış" type="search">
+                            <button class="search-submit" title="Axtar" type="submit" value="Axtar"><i class="fas fa-search"></i></button>
+                            <a class="addnews" href="/admin/news/index"><i class="fas fa-plus"></i></a>
+                            <a class="lang-switcher lang-switcher_ru" href=#>ru</a>
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+        </div>
+        <div class="nav-holder"></div>
+        <div class="nav-container">
+            <div class="l-center">
+                <nav class="nav">
+                    <a class="nav-i nav-i_current" href="/">Baş səhifə</a>
+                    <a class="nav-i" href="#">Siyasət</a>
+                    <a class="nav-i" href="#">İqtisadiyyat</a>
+                    <a class="nav-i" href="#">Cəmiyyət</a>
+                    <a class="nav-i" href="#">Şou-biznes</a>
+                    <a class="nav-i" href="#">Müharibə</a>
+                    <a class="nav-i" href="#">İdman</a>
+                    <a class="nav-i" href="#">Kriminal</a>
+                    <a class="nav-i" href="#">Mədəniyyət</a>
+                    <a class="nav-i" href="#">Dünya</a>
+                    <a class="nav-i" href="#">Avto-Moto</a>
+                    <a class="nav-i" href="#">İKT</a>
+                    <a class="nav-i" href="#">Turizm</a>
+                    <a class="nav-i" href="#">Maraqlı</a>
+                    <a class="nav-i" href="#">Müsahibə</a>
+                    <a class="nav-i" href="#">Baku TV</a>
+                    <a class="nav-i" href="#">CinemaPlus</a>
+                </nav>
+            </div>
+            <div class="nav-banner-container load-bnr">
+                <div class="l-center">
+                    <a class="nav-i nav-i_coronavirus" href="#"> Azərbaycanda koronavirusla bağlı xəbərlər </a>
+                    <a class="nav-i nav-i_coronavirus_stats" href="#"> Koronavirus Onlayn Statistika</a>
+                    <a class="nav-i nav-i_all" href="#">Bütün xəbərlər</a>
+                </div>
+            </div>
+        </div>
+    </header>
+    <div class="coronavirus-mobile">
+        <div class="l-center">
+            <a class="nav-coronavirus" href="#">Azərbaycanda koronavirusla bağlı xəbərlər</a>
+            <a class="nav-coronavirus-stats" href="#">Koronavirus Onlayn Statistika</a>
+        </div>
+    </div>
+
+    <div class="page-content">
+        <div class="l-center">
+                @RenderBody()
+        
+        </div>
+    </div>
+
+
+
+    <script src="~/lib/jquery/dist/jquery.min.js"></script>
+    <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="~/js/site.js" asp-append-version="true"></script>
+
+    @RenderSection("Scripts", required: false)
+</body>
+</html>

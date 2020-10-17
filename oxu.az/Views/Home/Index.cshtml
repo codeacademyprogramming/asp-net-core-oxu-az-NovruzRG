@@ -1,0 +1,91 @@
+﻿@{
+    ViewData["Title"] = "Home Page";
+    Layout = "_Layout"; }
+
+@model List<oxuAz.Models.News>
+@section StyleCSS{
+    <link rel="stylesheet" href="~/css/news.css" />
+}
+<div class="featured-container">
+
+
+    <div class="featured">
+        <div class="featured-switch  featured-switch_prev s-left">
+            <i class="fas fa-chevron-left featured-left-arrow s-left"></i>
+        </div>
+        <div class="featured-switch featured-switch_next s-next">
+            <i class="fas fa-chevron-right featured-right-arrow "></i>
+        </div>
+        <div class="featured-content">
+            @foreach (var item in Model)
+            {
+                <a class="featured-i" href="/home/details/@item.Id">
+                    <img alt="" class="featured-i-img" src='@Url.Content($"~/NewsAsserts/{item.FileName}")' />
+                    <div class="featured-i-content">
+                        <div class="featured-i-meta-container">
+                            <div class="featured-i-meta">
+                                <span class="featured-i-date"> @item.Date.Day @item.Date.ToString("MMM")</span>
+                                <span class="featured-i-time">@item.Date.ToString("HH:mm")</span>
+                                <span class="featured-i-views">@item.Views</span>
+                            </div>
+                        </div>
+                        <div class="featured-i-text">
+                            <div class="featured-i-title">
+                                @item.Title
+                            </div>
+                            <div class="featured-i-description"></div>
+                        </div>
+                    </div>
+                </a>}
+        </div>
+    </div>
+</div>
+<section class="news-list">
+    @foreach (var news in Model)
+    {
+        <div class="news-i">
+            <a class="news-i-inner" href="/home/details/@news.Id">
+                <div class="news-i-img-container">
+                    <div class="news-i-img" style="background: url('@Url.Content($"~/NewsAsserts/{news.FileName}")');"></div>
+                </div>
+                <div class="news-i-content">
+                    <div class="when">
+                        <div class="when-date">
+                            <div class="date-day">@news.Date.Day&nbsp;</div>
+                            <div class="date-month">@news.Date.ToString("MMM")</div>
+                            <div class="date-year">@news.Date.Year</div>
+                        </div>
+                        <div class="when-time">@news.Date.ToString("HH:mm")</div>
+                    </div>
+                    <div class="title">
+                        @news.Title
+                    </div>
+                    <div class="description"></div>
+                </div>
+            </a>
+            <div class="stats" data-id="@news.Id">
+                <div class="stats-i-container stats-like-active stats_likes">
+                    <span class="stats-i up">
+                        <i class="fas fa-thumbs-up"></i>
+                        <span>@news.Likes</span>
+                    </span>
+                </div>
+                <div class="stats-i-container stats-like-active stats_dislikes">
+                    <span class="stats-i down">
+                        <i class="fas fa-thumbs-down"></i>
+                        <span>@news.Dislikes</span>
+                    </span>
+                </div>
+                <div class="stats-i-container stats_views">
+                    <span class="stats-i">
+                        <i class="fas fa-eye"></i>
+                        @news.Views
+                    </span>
+                </div>
+            </div>
+        </div>}
+</section>
+
+@section Scripts{
+    <script src="~/js/carusel.js"></script>
+}

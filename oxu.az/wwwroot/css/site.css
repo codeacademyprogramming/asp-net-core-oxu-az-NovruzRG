@@ -1,0 +1,368 @@
+﻿body {
+    padding: 0;
+    margin: 0;
+    font: 14px Arial, sans-serif;
+    background-color: #FFF;
+}
+
+.body-inner {
+    overflow-x: hidden;
+    min-height: 100%;
+}
+
+.header {
+    position: relative;
+    z-index: 100001;
+    top: 0;
+    left: 0;
+    margin-bottom: 20px;
+    background-color: #00193c;
+    background-image: url(/asserts/header_bg.png);
+}
+
+.header-primary {
+    height: 45px;
+    background-color: #00193c;
+    background-image: url(/asserts/header_bg.png);
+}
+
+.l-center {
+    max-width: 940px;
+    margin: 0 auto;
+}
+
+.header-side {
+    font-family: Arial, sans-serif;
+}
+
+.oku-link {
+    display: inline-block;
+    margin-top: 12px;
+    margin-right: 25px;
+    line-height: 22px;
+    color: #fff;
+    font-size: 16px;
+}
+
+    .oku-link:hover {
+        color: #0cc;
+    }
+
+.header .social {
+    display: inline-block;
+    vertical-align: top;
+    margin-right: 25px;
+    padding-top: 1px;
+}
+
+.header .social-i {
+    display: inline-block;
+    vertical-align: middle;
+    margin-top: 11px;
+    background-repeat: no-repeat;
+}
+
+    .header .social-i i {
+        font-size: 22px;
+        color: white;
+        margin-left: 10px;
+    }
+
+.search-container {
+    display: inline-block;
+    vertical-align: top;
+    padding-top: 6px;
+    padding-bottom: 5px;
+}
+
+.search-input {
+    box-sizing: border-box;
+    display: inline-block;
+    vertical-align: top;
+    width: 226px;
+    height: 34px;
+    line-height: 34px\9;
+    margin: 0;
+    padding: 0 34px 0 8px;
+    outline: 0;
+    border-radius: 0;
+    border: 1px solid #ccc;
+    border-color: rgba(255, 255, 255, 0.3);
+    background: none transparent;
+    color: #fff;
+    font-size: 18px;
+}
+
+.search-submit {
+    text-shadow: none;
+    box-sizing: border-box;
+    display: inline-block;
+    width: 34px;
+    height: 34px;
+    margin: 0 0 0 -38px;
+    padding: 0;
+    border: 0;
+    background-color: transparent;
+}
+
+    .search-submit i {
+        font-size: 20px;
+        color: white;
+    }
+
+.lang-switcher {
+    position: relative;
+    z-index: 1;
+    display: inline-block;
+    vertical-align: top;
+    line-height: 34px;
+    margin-left: 20px;
+    color: #fff;
+    text-transform: uppercase;
+    font-size: 18px;
+}
+.addnews {
+    margin-left: 10px;
+    font-size: 24px;
+    color: white;
+    font-weight: bold;
+}
+
+.logo {
+    font-size: 35px;
+    color: white;
+    font-weight: bold;
+}
+
+    .logo:hover {
+        text-decoration: none;
+        color: white;
+    }
+
+.nav {
+    display: block;
+    line-height: 45px;
+}
+
+.nav-toggle:before {
+    content: '';
+    position: absolute;
+    z-index: 1;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.nav-i_current {
+    background-color: #454545;
+}
+
+.nav-i {
+    display: inline-block;
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 16px;
+}
+
+.nav-container {
+    position: relative;
+    z-index: 2;
+    top: 0;
+    transform: translateZ(0);
+    font-family: Arial, sans-serif;
+}
+
+.nav-banner-container {
+    overflow: hidden;
+    height: 45px;
+    background-color: #ededed;
+    line-height: 45px;
+}
+
+.nav-i_coronavirus {
+    float: left;
+    color: red;
+    background-color: pink;
+    margin-right: 0 !important;
+}
+
+.nav-i_coronavirus_stats {
+    float: left;
+    color: white;
+    background-color: orange;
+}
+
+.nav-i_all {
+    float: left;
+    color: #222;
+}
+
+.page-content {
+    overflow: auto;
+    padding-bottom: 56px;
+}
+
+.footer {
+    padding-top: 20px;
+    padding-bottom: 20px;
+    color: #aaa;
+    font-weight: bold;
+    font-size: 0.9em;
+}
+
+@media (max-width: 950px) {
+    .l-center {
+        width: 100%;
+        padding: 0 10px;
+    }
+
+    .featured {
+        margin: 0 auto;
+    }
+
+    .news-list {
+        width: 627px;
+    }
+
+    .header {
+        margin-bottom: 0;
+    }
+
+        .header .oku-link {
+            display: none;
+        }
+
+        .header .social {
+            display: none;
+        }
+}
+
+@media (max-width: 767px) {
+    .header {
+        padding: 15px 10px;
+        min-height: 34px;
+    }
+
+    .nav {
+        position: absolute;
+        left: -260px;
+        top: 15px;
+        width: 1px;
+        height: 0;
+        overflow: hidden;
+        opacity: 0;
+        transition: opacity 0.2s, left 0.2s;
+        text-align: left;
+        line-height: 34px;
+        background-image: url(//cdn.oxuAz/assets/header_bg-16b933a….png);
+    }
+
+    .nav-toggle {
+        display: inline-block;
+    }
+
+        .nav-toggle i {
+            margin-right: 10px;
+            color: white;
+            font-size: 25px;
+        }
+
+    .search-input {
+        display: none;
+    }
+
+    .nav-banner-container {
+        display: none;
+    }
+
+    .coronavirus-mobile {
+        display: block;
+        text-align: center;
+    }
+
+        .coronavirus-mobile .nav-coronavirus, .coronavirus-mobile .nav-coronavirus-stats {
+            display: block;
+            padding: 20px 0;
+            background: pink;
+            color: red;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        .coronavirus-mobile .nav-coronavirus-stats {
+            background: orange;
+            color: white;
+        }
+
+        .coronavirus-mobile .l-center {
+            padding: 0 !important;
+        }
+
+    .page-content {
+        overflow: visible;
+        position: relative;
+        z-index: 1;
+        right: 0;
+    }
+}
+
+@media (min-width: 768px) {
+    .nav {
+        overflow: hidden;
+        max-height: 91px;
+        max-width: 900px;
+    }
+
+    .nav-toggle {
+        position: relative;
+        z-index: 1;
+        top: 14px;
+        vertical-align: top;
+        margin-left: 25px;
+        padding-left: 25px;
+        user-select: none;
+        color: #fff;
+        line-height: 20px;
+        font-size: 16px;
+        cursor: default;
+        display: none;
+        transition: opacity 0.3s;
+    }
+
+    .nav-container {
+        background-color: #222222;
+        box-shadow: 0 3px 3px rgba(0, 0, 0, 0.4);
+    }
+
+        .nav-container:before {
+            top: 45px;
+        }
+
+        .nav-container:before, .nav-container:after {
+            content: '';
+            position: absolute;
+            left: 0;
+            display: block;
+            width: 100%;
+            height: 1px;
+            background: #454545;
+        }
+
+    .nav-i {
+        padding-left: 10px;
+        padding-right: 10px;
+        margin-right: 10px;
+        transition: background-color 0.2s;
+    }
+
+        .nav-i:hover {
+            background-color: #454545;
+            color: white;
+            text-decoration: none;
+        }
+
+    .coronavirus-mobile {
+        display: none;
+    }
+}

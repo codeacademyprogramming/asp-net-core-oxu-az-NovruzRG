@@ -1,0 +1,47 @@
+﻿
+@{ ViewData["Title"] = "Details";
+
+    Layout = "_Layout"; }
+@section StyleCSS{
+    <link rel="stylesheet" href="~/css/content.css" />
+}
+@model oxuAz.Models.News
+<div class="news-container">
+    <div class="news">
+        <div class="when">
+            <div class="when-date">
+                <div class="date-day">@Model.Date.Day&nbsp;</div>
+                <div class="date-month">@Model.Date.ToString("MMM")</div>
+                <div class="date-year">@Model.Date.Year</div>
+            </div>
+            <div class="when-time">@Model.Date.ToString("HH:mm")</div>
+        </div>
+
+        <img alt=""
+             class="news-img"
+             src="@Url.Content($"~/NewsAsserts/{Model.FileName}")" />
+
+        <div class="stats" data-id="@Model.Id">
+            <div class="stats-i-container stats_views">
+                <i class="fas fa-eye"></i>
+                <span class="stats-i">
+                    <span>@Model.Views</span></span>
+            </div>
+            <div class="stats-i-container stats-like-active stats_likes">
+                <i class="fas fa-thumbs-up"></i>
+                <span class="stats-i"><span>@Model.Likes</span></span>
+            </div>
+            <div class="stats-i-container stats-like-active stats_dislikes">
+                <i class="fas fa-thumbs-down"></i>
+                <span class="stats-i"><span>@Model.Dislikes</span></span>
+            </div>
+        </div>
+        <div class="news-content">
+            <h1>“@Model.Title“</h1>
+            <p>
+                @Model.Content
+            </p>
+            <p>&nbsp;</p>
+        </div>
+    </div>
+</div>
