@@ -8480,11 +8480,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\MrUnknown\\source\\repos\\oxu.az\\oxu.az\\oxuAz.csproj",
+      "projectUniqueName": "C:\\Users\\MrUnknown\\Desktop\\GitHub\\asp-net-core-oxu-az-NovruzRG\\oxu.az\\oxuAz.csproj",
       "projectName": "oxuAz",
-      "projectPath": "C:\\Users\\MrUnknown\\source\\repos\\oxu.az\\oxu.az\\oxuAz.csproj",
+      "projectPath": "C:\\Users\\MrUnknown\\Desktop\\GitHub\\asp-net-core-oxu-az-NovruzRG\\oxu.az\\oxuAz.csproj",
       "packagesPath": "C:\\Users\\MrUnknown\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\MrUnknown\\source\\repos\\oxu.az\\oxu.az\\obj\\",
+      "outputPath": "C:\\Users\\MrUnknown\\Desktop\\GitHub\\asp-net-core-oxu-az-NovruzRG\\oxu.az\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Microsoft\\Xamarin\\NuGet\\"

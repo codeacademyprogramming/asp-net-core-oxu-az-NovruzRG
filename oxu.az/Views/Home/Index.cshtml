@@ -19,7 +19,7 @@
         <div class="featured-content">
             @foreach (var item in Model)
             {
-                <a class="featured-i" href="/home/details/@item.Id">
+                <a class="featured-i" target="_blank" href="/home/details/@item.Id">
                     <img alt="" class="featured-i-img" src='@Url.Content($"~/NewsAsserts/{item.FileName}")' />
                     <div class="featured-i-content">
                         <div class="featured-i-meta-container">
@@ -44,7 +44,7 @@
     @foreach (var news in Model)
     {
         <div class="news-i">
-            <a class="news-i-inner" href="/home/details/@news.Id">
+            <a class="news-i-inner" target="_blank" href="/home/details/@news.Id">
                 <div class="news-i-img-container">
                     <div class="news-i-img" style="background: url('@Url.Content($"~/NewsAsserts/{news.FileName}")');"></div>
                 </div>

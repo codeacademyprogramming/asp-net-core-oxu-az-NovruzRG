@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "MxNk2k6gAZ7BGx+2FpxAXy4owSJO+2DOcskpg+nOlVR+w8RlJHyBZbRYPeuaRo6CaeaERz3kTOkx/fHQiOARdA==",
+  "dgSpecHash": "nx9f6xnFGlqyP58UgR/sgF+L6b+91m0erqvGtAhEJ2Md0MtjMFCpBAS1b/5hd6v1Lg6FO1xJKqBO7yhBZFMvFQ==",
   "success": true,
-  "projectFilePath": "C:\\Users\\MrUnknown\\source\\repos\\oxu.az\\oxu.az\\oxuAz.csproj",
+  "projectFilePath": "C:\\Users\\MrUnknown\\Desktop\\GitHub\\asp-net-core-oxu-az-NovruzRG\\oxu.az\\oxuAz.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\MrUnknown\\.nuget\\packages\\microsoft.aspnetcore.html.abstractions\\2.2.0\\microsoft.aspnetcore.html.abstractions.2.2.0.nupkg.sha512",
     "C:\\Users\\MrUnknown\\.nuget\\packages\\microsoft.aspnetcore.razor\\2.2.0\\microsoft.aspnetcore.razor.2.2.0.nupkg.sha512",
